@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="color-scheme" content="light" />
+    <title>AI Chat Highlighter</title>
+    <meta name="description" content="Highlight the important parts of your AI chats in ChatGPT, Claude, Gemini, Perplexity, and more. Highlights stay on your computer." />
+    <link rel="icon" href="favicon.png" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="wrap">
+      <header class="site-header">
+        <a class="brand" href="./">
+          <img src="icon.png" alt="" width="30" height="30" />
+          AI Chat Highlighter
+        </a>
+        <nav class="nav" aria-label="Sections">
+          <a href="#how">How it works</a>
+          <a href="#pricing">Pricing</a>
+          <a href="privacy.html">Privacy</a>
+        </nav>
+      </header>
+
+      <main>
+        <div class="hero">
+          <div>
+            <h1>Highlight what <span class="hl">matters</span> in your AI chats.</h1>
+            <p class="lede">
+              Long AI answers bury the good parts. Select a passage, pick a color, and it stays highlighted
+              every time you come back to that chat.
+            </p>
+            <ul class="ticks hero-ticks">
+              <li>No clutter on the page</li>
+              <li>Your highlights stay on your computer</li>
+            </ul>
+            <div class="cta-row">
+              <!-- After Chrome Web Store approval: set href to the listing URL and remove aria-disabled. -->
+              <a class="btn" id="chrome-link" href="#pricing" aria-disabled="true">Add to Chrome · coming soon</a>
+            </div>
+          </div>
+
+          <div class="demo" aria-hidden="true">
+            <div class="demo-bar"><span></span><span></span><span></span></div>
+            <p class="bubble user">How should I prepare for a product manager interview?</p>
+            <div class="bubble ai">
+              <p>Start with the company. <mark style="--c: var(--yellow)">Read about their recent product launches</mark> and who their customers are.</p>
+              <p>Next, <mark style="--c: var(--blue)">prepare two or three stories that show leadership</mark>, told with the STAR method.</p>
+              <p>Finally, <mark style="--c: var(--green)">ask what success looks like in the first 90 days</mark>.</p>
+            </div>
+            <div class="chips">
+              <i class="none"></i>
+              <i style="--c: var(--purple)"></i>
+              <i style="--c: var(--blue)"></i>
+              <i style="--c: var(--pink)"></i>
+              <i style="--c: var(--green)"></i>
+              <i style="--c: var(--orange)"></i>
+              <i style="--c: var(--yellow)"></i>
+            </div>
+          </div>
+        </div>
+
+        <section class="offer" aria-labelledby="offer-title">
+          <h2 class="offer-title" id="offer-title">Free to use. Pro is <span class="hl">$5 for lifetime</span>.</h2>
+          <p class="section-lede">One payment, no subscription. Highlighting never costs anything.</p>
+        </section>
+
+        <section aria-labelledby="sites-title">
+          <h2 class="section-title" id="sites-title">Works where you chat</h2>
+          <ul class="sites">
+            <li>ChatGPT</li>
+            <li>Claude</li>
+            <li>Gemini</li>
+            <li>Perplexity</li>
+            <li>Grok</li>
+            <li>Copilot</li>
+            <li>DeepSeek</li>
+            <li>NotebookLM</li>
+            <li>Meta AI</li>
+          </ul>
+          <p class="fine">You can also turn it on for any other site from the extension’s menu.</p>
+        </section>
+
+        <section id="how" aria-labelledby="how-title">
+          <h2 class="section-title" id="how-title">How it works</h2>
+          <p class="section-lede">Nothing floats on the page until you select text.</p>
+          <ol class="steps">
+            <li class="card">
+              <h3><span class="hl">Select text</span></h3>
+              <p>Drag over any part of an AI answer. A small row of colors appears next to it.</p>
+            </li>
+            <li class="card">
+              <div class="step-head">
+                <h3>Pick a color</h3>
+                <span class="mini-chips" aria-hidden="true">
+                  <i class="none"></i>
+                  <i style="--c: var(--purple)"></i>
+                  <i style="--c: var(--blue)"></i>
+                  <i style="--c: var(--pink)"></i>
+                  <i style="--c: var(--green)"></i>
+                  <i style="--c: var(--orange)"></i>
+                  <i style="--c: var(--yellow)"></i>
+                </span>
+              </div>
+              <p>Click a color, press <kbd>Alt</kbd>+<kbd>H</kbd>, or right-click. Click a new color to change it, or the slashed chip to clear it.</p>
+            </li>
+            <li class="card">
+              <div class="step-head">
+                <h3>Come back anytime</h3>
+                <svg class="step-icon" aria-hidden="true" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12a9 9 0 1 1-2.64-6.36"/><path d="M21 3v6h-6"/></svg>
+              </div>
+              <p>Reopen that chat and your highlights are still there, even after you restart your computer.</p>
+            </li>
+          </ol>
+        </section>
+
+        <section id="pricing" aria-labelledby="pricing-title">
+          <h2 class="section-title" id="pricing-title">Pricing</h2>
+          <p class="section-lede">Highlighting is free. Pro is a single payment, with no subscription.</p>
+          <div class="plans">
+            <div class="card plan">
+              <h3>Free</h3>
+              <p class="price">$0</p>
+              <ul class="ticks dots">
+                <li>Six highlight colors</li>
+                <li>Highlights come back when you reopen a chat</li>
+                <li>Shortcut, right-click, and color chips</li>
+                <li>Works on all nine chat sites</li>
+              </ul>
+            </div>
+            <div class="card plan pro">
+              <h3>Lifetime Pro</h3>
+              <p class="price">$5 <small>one-time</small></p>
+              <ul class="ticks">
+                <li class="dot"><strong>All Free features are included</strong></li>
+                <li>Every highlight in one place, organized by chat</li>
+                <li>Color-coded AI summaries for each chat, made by Chrome’s built-in AI on your computer (on supported computers; others get a key-points list)</li>
+                <li>Copy highlights or summaries into your notes</li>
+                <li>Pay once, use it for the life of the product</li>
+              </ul>
+            </div>
+          </div>
+          <p class="fine">
+            Payments are handled securely by Stripe. We never see your card number.
+            <strong>All sales are final</strong>, except where the law requires otherwise.
+            If Pro isn’t working as described, email <a href="mailto:aichathighlighter@gmail.com">aichathighlighter@gmail.com</a> and we’ll help.
+          </p>
+        </section>
+
+        <section aria-labelledby="privacy-title">
+          <div class="card privacy-band">
+            <div class="lock" aria-hidden="true">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="11" width="16" height="10" rx="2"/><path d="M8 11V7a4 4 0 0 1 8 0v4"/></svg>
+            </div>
+            <div>
+              <h2 class="section-title" id="privacy-title">Your highlights stay with you</h2>
+              <p>Highlights are saved in Chrome on your own computer. They are not sent to us, and we don’t read your chats.</p>
+              <p><a href="privacy.html">Read the privacy policy</a></p>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <footer class="site-footer">
+        <nav aria-label="Footer">
+          <a href="privacy.html">Privacy policy</a>
+          <a href="mailto:aichathighlighter@gmail.com">aichathighlighter@gmail.com</a>
+        </nav>
+        <p>Lifetime access refers to the lifetime of the product. We reserve the right to modify or discontinue features at any time without notice. Provided as-is.</p>
+        <p>AI Chat Highlighter is not affiliated with OpenAI, Anthropic, Google, Perplexity, xAI, Microsoft, DeepSeek, or Meta.</p>
+      </footer>
+    </div>
+  </body>
+</html>
